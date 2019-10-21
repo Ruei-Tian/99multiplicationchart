@@ -1,0 +1,167 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+/* CSS reset 結束 */
+
+.wrap {
+    color:#2EB738;
+    width: 1280px; 
+    margin: auto;
+    font-family: "Helvetica Neue", sans-serif;            
+}
+
+.section { 
+    background: #F0F0F0;             
+    padding: 80px;
+    display: flex;
+}
+
+.titlebox {
+    position: relative;
+   
+}
+.titlebox::after {
+    position: absolute;
+    left: 10px;
+    top: 358px;
+    content: 'X'; 
+    color: #2EB738;                           
+    }
+.titlebox::before {
+    position: absolute;
+    left: 10px;
+    top: -7px;
+    content: 'X';   
+    color: #2EB738;                           
+    }  
+
+.innerbox {
+    width: 286px;
+    height: 366px;
+    margin: auto;
+    border-top: 1px solid #2EB738;
+    border-bottom: 1px solid #2EB738;                    
+    position: relative;          
+}
+.innerbox::before {
+    position: absolute;
+    left: 295px;
+    top: -8px;
+    content: 'X';
+    color: #2EB738;   
+}
+.innerbox::after {
+    position: absolute;
+    left: 295px;
+    top: 357px;
+    content: 'X';
+    color: #2EB738;   
+}
+
+.titlebox h1 {
+    position: absolute;
+    top: calc(50% - 28px);
+    left: calc(50% - 143px);
+    font-size: 56px;
+    font-family: "PingFangTC-Medium", sans-serif;
+    }
+
+.titlebox p {
+    position: absolute;
+    top: calc(50% + 35px);
+    left: calc(50% - 143px);
+    font-size: 24px; 
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card li {
+    margin: 15px;
+    flex: 27%;
+}
+
+.number_card {   
+    height: 366px;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 10px #D8D8D8;
+    border-radius: 100px 0px 30px 0px;
+    padding: 40px; 
+
+    display: flex;   
+    flex-wrap: wrap; 
+    flex-direction: column; 
+      
+    
+}
+
+.number_card .count {
+    font-size: 128px;
+    font-weight: bold;
+    text-shadow: 4px 3px 0px #F0F0F0;
+    margin: 2px 20px;
+}
+
+.number_card .formula {
+    font-size: 24px;
+    margin: 10px 10px;
+}
+
+.footer {
+    background: #2EB738;
+    height: 34px;
+    color: #FFFFFF;
+    text-align: right;
+    padding-right: 85px;
+}
+
+.footer p {
+    line-height: 34px;
+}
+
+
